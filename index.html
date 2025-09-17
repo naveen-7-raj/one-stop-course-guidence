@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Career & Education Advisor</title>
+    <link rel="stylesheet" href="style.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>🎯 Career & Education Advisor</h1>
+    </header>
+
+    <main>
+        <section class="form-section">
+            <h2>Let me help you choose the right career path! 👋</h2>
+
+            <form id="careerForm">
+                <label>Marks (%)</label>
+                <input type="number" id="marks" placeholder="E.g., 85" required />
+
+                <label>Skills (comma separated)</label>
+                <input type="text" id="skills" placeholder="E.g., Programming, Marketing" required />
+
+                <label>Interest</label>
+                <select id="interest" required>
+                    <option value="tech">Technology</option>
+                    <option value="business">Business</option>
+                    <option value="creative">Creative Arts</option>
+                </select>
+
+                <button type="submit">Get Recommendation</button>
+            </form>
+        </section>
+
+        <section class="ai-bubble" id="aiBubble">
+            “Hi! I’m your friendly advisor. Fill in the form above, and I’ll guide you! 🌟”
+        </section>
+
+        <section id="result"></section>
+
+        <section class="chart-section">
+            <h2>📊 Job Market Insights (2025)</h2>
+            <canvas id="marketChart" width="400" height="200"></canvas>
+        </section>
+    </main>
+
+    <footer>
+        <p>Made with ❤️ for Students</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
